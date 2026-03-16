@@ -1,0 +1,27 @@
+{
+  "name": "ccpeak",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "knip": "knip --production",
+    "lint": "biome check --write .",
+    "lint:ci": "biome ci .",
+    "lint-staged": "lint-staged",
+    "check": "bun run typecheck && bun run knip && bun run lint && AGENT=1 bun test --coverage",
+    "check:ci": "bun run typecheck && bun run knip && bun run lint:ci && AGENT=1 bun test --coverage",
+    "prepare": "husky && bun run setup-hooks",
+    "setup-hooks": "bun -e 'await Bun.write(\".husky/pre-commit\", \"#!/usr/bin/env sh\\n\\nbun run knip && bun run lint-staged\\n\")' && chmod +x .husky/pre-commit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.7",
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "knip": "^5.87.0",
+    "lint-staged": "^16.4.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
