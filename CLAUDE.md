@@ -16,6 +16,8 @@ A CLI tool that displays Claude Code API peak/off-peak status as a statusline. I
 - `bun run typecheck` — tsc type checking
 - `bun run knip` — dead code detection
 
+**Always use `bun run check` to verify changes.** Do not run `bun run lint`, `bun test`, or `bun run knip` separately — use `bun run check` which runs all of them together.
+
 ## Architecture
 
 Two source files, one concern each:
