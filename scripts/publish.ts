@@ -56,9 +56,9 @@ async function fetchPreviousVersion(fetchFn: FetchFn = fetch): Promise<string | 
 
 export function bumpVersion(version: string, type: BumpType): string {
   const parts = version.split(".").map((part) => Number(part));
-  const major = parts[0] ?? 0;
-  const minor = parts[1] ?? 0;
-  const patch = parts[2] ?? 0;
+  const major = parts[0] || 0;
+  const minor = parts[1] || 0;
+  const patch = parts[2] || 0;
   switch (type) {
     case "major":
       return `${major + 1}.0.0`;

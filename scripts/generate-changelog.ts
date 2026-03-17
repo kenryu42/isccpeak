@@ -148,7 +148,7 @@ export async function runChangelog(options: RunChangelogOptions = {}): Promise<v
   }
 
   const changelog = await generateChangelog(previousTag, runner);
-  const contributors = await getContributorsForRepo(previousTag, REPO, runner);
+  const contributors = await getContributors(previousTag, runner);
   const notes = formatReleaseNotes(changelog, contributors);
 
   log(notes.join("\n"));
