@@ -2,8 +2,14 @@
   "name": "ccpeak",
   "version": "0.0.1",
   "type": "module",
-  "private": true,
+  "bin": {
+    "ccpeak": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "bun build src/cli.ts --outfile dist/cli.js --target=node",
     "typecheck": "tsc --noEmit",
     "knip": "knip --production",
     "lint": "biome check --write .",
