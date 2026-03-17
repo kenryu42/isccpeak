@@ -1,6 +1,6 @@
 # isccpeak
 
-A CLI that shows whether Claude Code is in peak or off-peak API hours, with a live countdown.
+A CLI that shows whether Claude Code is in peak or 2x usage API hours, with a live countdown.
 
 > [!WARNING]
 > This CLI will only be relevant until ~March 29, 2026 ([Source](https://x.com/claudeai/status/2032911276226257206)).
