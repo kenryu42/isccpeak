@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { formatStatusline, getPeakStatus } from "./peak";
+import { formatStatusline, getPeakStatus } from "@/peak";
 
 async function readStdinAsync(): Promise<string | null> {
   if (process.stdin.isTTY) {
