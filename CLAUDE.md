@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## What is ccpeak?
+## What is isccpeak?
 
 A CLI tool that displays Claude Code API peak/off-peak status as a statusline. It detects whether the current time falls within Anthropic's peak hours (Mon–Fri 5:00–10:59am PT) and outputs a countdown — `🔴 Peak` or `🟢 2x` — suitable for piping into shell prompts or Claude Code's statusline.
 

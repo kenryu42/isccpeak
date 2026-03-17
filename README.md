@@ -1,4 +1,4 @@
-# ccpeak
+# isccpeak
 
 A CLI that shows whether Claude Code is in peak or off-peak API hours, with a live countdown.
 
@@ -28,7 +28,7 @@ Add to your `~/.claude/settings.json`:
 {
   "statusLine": {
     "type": "command",
-    "command": "bunx ccpeak"
+    "command": "bunx isccpeak"
   }
 }
 ```
@@ -43,7 +43,7 @@ Changes take effect immediately — no restart needed.
 {
   "statusLine": {
     "type": "command",
-    "command": "bunx ccpeak"
+    "command": "bunx isccpeak"
   }
 }
 ```
@@ -54,20 +54,20 @@ Changes take effect immediately — no restart needed.
 {
   "statusLine": {
     "type": "command",
-    "command": "npx -y ccpeak"
+    "command": "npx -y isccpeak"
   }
 }
 ```
 
 ### Piping with Other Statuslines
 
-If you already have a statusline command, pipe it into ccpeak to append the peak indicator:
+If you already have a statusline command, pipe it into isccpeak to append the peak indicator:
 
 ```json
 {
   "statusLine": {
     "type": "command",
-    "command": "your-existing-command | bunx ccpeak"
+    "command": "your-existing-command | bunx isccpeak"
   }
 }
 ```

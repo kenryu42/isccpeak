@@ -7,7 +7,7 @@ export type BumpType = "major" | "minor" | "patch";
 type FetchFn = (input: string | URL) => Promise<Response>;
 type Environment = Record<string, string | undefined>;
 
-export const PACKAGE_NAME = "ccpeak";
+export const PACKAGE_NAME = "isccpeak";
 export const RELEASE_FILES = ["package.json"] as const;
 export const NPM_PUBLISH_COMMAND = [
   "npm",

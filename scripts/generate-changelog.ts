@@ -14,7 +14,7 @@ export const EXCLUDED_AUTHORS = ["actions-user", "github-actions[bot]", "kenryu4
 /** Regex to match included commit types (with optional scope) */
 export const INCLUDED_COMMIT_PATTERN = /^(feat|fix)(\([^)]+\))?:/i;
 
-export const REPO = process.env.GITHUB_REPOSITORY ?? "kenryu42/ccpeak";
+export const REPO = process.env.GITHUB_REPOSITORY ?? "kenryu42/isccpeak";
 
 /**
  * Check if a commit message should be included in the changelog.

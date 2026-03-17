@@ -1,5 +1,5 @@
 {
-  "name": "ccpeak",
+  "name": "isccpeak",
   "version": "0.0.1",
   "description": "Claude Code statusline showing peak/off-peak API hours with countdown timer",
   "license": "MIT",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kenryu42/ccpeak.git"
+    "url": "git+https://github.com/kenryu42/isccpeak.git"
   },
-  "homepage": "https://github.com/kenryu42/ccpeak#readme",
+  "homepage": "https://github.com/kenryu42/isccpeak#readme",
   "bugs": {
-    "url": "https://github.com/kenryu42/ccpeak/issues"
+    "url": "https://github.com/kenryu42/isccpeak/issues"
   },
   "keywords": [
     "claude",
@@ -27,14 +27,14 @@
     "node": ">=18"
   },
   "bin": {
-    "ccpeak": "dist/cli.js"
+    "isccpeak": "dist/cli.js"
   },
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "bun run clean && bun build src/cli.ts --outfile dist/cli.js --target=node",
-    "clean": "rm -rf dist ccpeak-*.tgz",
+    "clean": "rm -rf dist isccpeak-*.tgz",
     "publish:dry-run": "bun run scripts/publish.ts --dry-run",
     "publish:recover": "bun run scripts/publish.ts --recover",
     "publish:recover:execute": "bun run scripts/publish.ts --recover --execute",
