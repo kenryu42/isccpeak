@@ -3,7 +3,7 @@
 A CLI that shows whether Claude Code is in peak or off-peak API hours, with a live countdown.
 
 > [!WARNING]
-> This CLI will only live until ~March 29, 2026 ([Source](https://x.com/claudeai/status/2032911276226257206)).
+> This CLI will only be relevant until ~March 29, 2026 ([Source](https://x.com/claudeai/status/2032911276226257206)).
 
 ```
 🟢 2x · 4h 30m left        ← off-peak, 2× usage multiplier active
