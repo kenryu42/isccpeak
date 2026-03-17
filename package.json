@@ -1,7 +1,31 @@
 {
   "name": "ccpeak",
   "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
   "type": "module",
+  "author": {
+    "name": "J Liew",
+    "email": "jliew@420024lab.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenryu42/ccpeak.git"
+  },
+  "homepage": "https://github.com/kenryu42/ccpeak#readme",
+  "bugs": {
+    "url": "https://github.com/kenryu42/ccpeak/issues"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "statusline",
+    "peak-hour",
+    "2x-usage"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "bin": {
     "ccpeak": "dist/cli.js"
   },
@@ -9,7 +33,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun build src/cli.ts --outfile dist/cli.js --target=node",
+    "build": "bun run clean && bun build src/cli.ts --outfile dist/cli.js --target=node",
+    "clean": "rm -rf dist ccpeak-*.tgz",
+    "publish:dry-run": "bun run scripts/publish.ts --dry-run",
+    "publish:recover": "bun run scripts/publish.ts --recover",
+    "publish:recover:execute": "bun run scripts/publish.ts --recover --execute",
     "typecheck": "tsc --noEmit",
     "knip": "knip --production",
     "lint": "biome check --write .",
