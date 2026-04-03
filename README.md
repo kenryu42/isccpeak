@@ -1,9 +1,6 @@
 # isccpeak
 
-A CLI that shows whether Claude Code is in peak or 2x usage API hours, with a live countdown.
-
-> [!WARNING]
-> This CLI will only be relevant until ~March 29, 2026 ([Source](https://x.com/claudeai/status/2032911276226257206)).
+A CLI statusline showing Claude Code peak-hour status with a live countdown.
 
 ```
 🟢 2x · 4h 30m left        ← off-peak, 2× usage multiplier active
@@ -91,9 +88,9 @@ Countdown formats: `<1m`, `42m`, `1h 30m`.
 
 ## Peak Hours
 
-Peak hours are **Monday–Friday, 5:00 AM – 10:59 AM PT** ([Source](https://x.com/claudeai/status/2032911277497135523?s=20)).
+Peak hours are **Monday–Friday, 5:00 AM – 10:59 AM PT** (1:00 PM – 7:00 PM GMT) ([Source](https://x.com/trq212/status/2037254607001559305?s=20)).
 
-Outside these hours (evenings, nights, weekends), the 2× usage multiplier applies.
+During peak hours, your 5-hour session limits are consumed faster. Outside these hours (evenings, nights, weekends), limits reset at the normal rate.
 
 ## Development
 
