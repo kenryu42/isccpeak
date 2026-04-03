@@ -1,6 +1,6 @@
 {
   "name": "isccpeak",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Claude Code statusline showing peak/off-peak API hours with countdown timer",
   "license": "MIT",
   "type": "module",
