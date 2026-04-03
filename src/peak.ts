@@ -85,5 +85,5 @@ export function formatStatusline(status: PeakStatus): string {
   if (status.peak) {
     return `🔴 Peak · ${formatCountdown(status.minutesLeft)} left`;
   }
-  return `🟢 2x · ${formatCountdown(status.minutesToPeak)} left`;
+  return `🟢 Normal · ${formatCountdown(status.minutesToPeak)} left`;
 }

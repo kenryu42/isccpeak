@@ -117,7 +117,7 @@ describe("formatStatusline", () => {
 
   test("off-peak status shows green circle", () => {
     const line = formatStatusline({ peak: false, minutesToPeak: 225 });
-    expect(line).toBe("🟢 2x · 3h 45m left");
+    expect(line).toBe("🟢 Normal · 3h 45m left");
   });
 
   test("peak with less than 1 minute", () => {
@@ -127,6 +127,6 @@ describe("formatStatusline", () => {
 
   test("off-peak with minutes only", () => {
     const line = formatStatusline({ peak: false, minutesToPeak: 42 });
-    expect(line).toBe("🟢 2x · 42m left");
+    expect(line).toBe("🟢 Normal · 42m left");
   });
 });
