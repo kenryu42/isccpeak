@@ -3,8 +3,8 @@
 A CLI statusline showing Claude Code peak-hour status with a live countdown.
 
 ```
-🟢 2x · 4h 30m left        ← off-peak, 2× usage multiplier active
-🔴 Peak · 2h 15m left      ← peak hours, standard usage
+🟢 Normal · 4h 30m left    ← off-peak, session limits at normal rate
+🔴 Peak · 2h 15m left      ← peak hours, session limits drain faster
 ```
 
 ## Table of Contents
@@ -72,17 +72,17 @@ If you already have a statusline command, pipe it into isccpeak to append the pe
 This produces output like:
 
 ```
-your status text | 🟢 2x · 4h 30m left
+your status text | 🟢 Normal · 4h 30m left
 ```
 
 > **Note:** JSON stdin (e.g. from commands that output `{...}`) is automatically ignored — only plain text is prepended.
 
 ## Output Format
 
-| State    | Example                    | Meaning                                     |
-| -------- | -------------------------- | ------------------------------------------- |
-| Off-peak | `🟢 2x · 4h 30m left`     | 2× multiplier active, time until peak starts |
-| Peak     | `🔴 Peak · 2h 15m left`   | Peak hours, time until peak ends             |
+| State    | Example                        | Meaning                                        |
+| -------- | ------------------------------ | ---------------------------------------------- |
+| Off-peak | `🟢 Normal · 4h 30m left`     | Session limits at normal rate, time until peak  |
+| Peak     | `🔴 Peak · 2h 15m left`       | Session limits drain faster, time until off-peak |
 
 Countdown formats: `<1m`, `42m`, `1h 30m`.
 
