@@ -11,16 +11,6 @@ A CLI statusline showing Claude Code peak-hour status with a live countdown.
 🔴 Peak · 2h 15m left      ← peak hours, session limits drain faster
 ```
 
-## Table of Contents
-
-- [Quick Start](#quick-start)
-- [Manual Setup](#manual-setup)
-- [Output Format](#output-format)
-- [Piping with Other Statuslines](#piping-with-other-statuslines)
-- [Peak Hours](#peak-hours)
-- [Development](#development)
-- [License](#license)
-
 ## Quick Start
 
 Add to your `~/.claude/settings.json`:
